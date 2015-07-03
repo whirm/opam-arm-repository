@@ -1,0 +1,6 @@
+opam-version: "1"
+maintainer: "ocaml@whirm.eu"
+substs: ["arm.conf" "ocamlfind"]
+build: [["./build.sh" "%{prefix}%"]]
+remove: [["./remove.sh" "%{prefix}%"]]
+depends: ["ocamlfind" {= "1.5.5"} "ocaml-arm" { >= "4.02.1" } ]

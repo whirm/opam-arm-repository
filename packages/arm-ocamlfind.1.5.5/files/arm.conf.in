@@ -1,0 +1,7 @@
+path(arm)="%{prefix}%/arm-linux-gnueabihf/lib"
+destdir(arm)="%{prefix}%/arm-linux-gnueabihf/lib"
+stdlib(arm)="%{prefix}%/arm-linux-gnueabihf/lib/ocaml"
+ocamlc(arm)="arm-linux-gnueabihf-ocamlc"
+ocamlopt(arm)="arm-linux-gnueabihf-ocamlopt"
+ocamlmklib(arm)="arm-linux-gnueabihf-ocamlmklib"
+ldconf(arm)="%{prefix}%/arm-linux-gnueabihf/lib/ocaml/ld.conf"
