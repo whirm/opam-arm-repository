@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "ocaml@whirm.eu"
+build: [[
+  "make" "OCAML_SRC=%{lib}%/ocaml-src"
+         "TARGET_PREFIX=%{prefix}%/arm-linux-gnueabihf"
+         "TARGET_BINDIR=%{bin}%"
+]]
+remove: [[ "./remove.sh" "%{prefix}%" ]]
+depends:
+  ["ocaml-src" {>= "4.02.1"}
+  ]
+conflicts:
+  ["arm-ocamlfind" { < "1.5.5" }
+   "arm-ssl" { < "0.4.7" }
+   "arm-lwt" { < "2.4.5" }]
