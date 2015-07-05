@@ -1,0 +1,6 @@
+opam-version: "1"
+maintainer: "ocaml@whirm.eu"
+build: [["./build.sh" "%{prefix}%"]]
+remove: [["ocamlfind" "-toolchain" "arm" "remove" "ssl"]]
+depends:
+  ["arm-ocamlfind" "arm-c-openssl" "ocaml-arm" { >= "4.02" }]
